@@ -40,7 +40,7 @@ def topological_sort(vertices)
   order
 end
 
-def visit vertex, visited, order
+def visit vertex, visited, order = []
   visited.add(vertex)
 
   neighbors = vertex.out_edges.map(&:to_vertex)
